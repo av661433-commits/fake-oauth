@@ -1,1 +1,1 @@
-
+DOCTYPE html> <html> <script> const params = new URLSearchParams(window.location.search); const redirectUri = params.get('redirect_uri') || 'https://connect.vercel.com/callback'; const state = params.get('state'); window.location.replace(redirectUri + '?code=fake-authz-code-123&state=' + state); </script> </html>
